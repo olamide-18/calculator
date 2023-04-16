@@ -8,13 +8,18 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #000;
 }
 
 .calc{
+    position: fixed;
     background-color: black;
     display: flex;
     flex-direction: column;
-
+    width: 23%;
+    height: 100%;
+    left: 50%;
+    margin-left: -11.5%;
 }
 
 .calc-1{
@@ -62,6 +67,7 @@ body{
     background-color: #454545;
     color: white;
 }
+
 .special{
     background-color: #454545;
     color: white;
@@ -71,14 +77,20 @@ body{
 }
 
 
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
     .calc{
         width: 100%;
         height: 100%;
-        position: fixed;
         top: 0;
         left: 0;
+        margin-left: 0%;
     }
-    
+}
 
+@media screen and (min-width: 425px) and (max-width: 1024px){
+    .calc{
+        left: 50%;
+        margin-left: -170px;
+        width: 350px;
+    }
 }

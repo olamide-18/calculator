@@ -14,7 +14,7 @@ function resetValue(){
 }
 
 function negateValue(){
-
+    // let 
 }
 
 function calculateValue(){
